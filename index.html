@@ -5,12 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello bootstrap 5</h1>
-    <div class="alert alert-primary" role="alert">
-      A simple primary alert—check it out!
+    <div class="container">
+      <header class="d-flex justify-content-between m-lg-3">
+        <div class="logo">
+          <object type="image/svg+xml" data="./img/logo.svg"></object>
+        </div>
+
+        <ul id="nav" class="nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Sign Up</a>
+          </li>
+        </ul>
+
+        <button id="close_modal" class="close_modal-menu">
+          <img src="./img/button_close.svg" alt="button close burger Menu" />
+        </button>
+
+        <div class="header_menu d-flex align-items-center">
+          <button class="header_sign btn btn-primary">Sign Up</button>
+          <button id="burgerMenu" class="menu_burger ml-5">
+            <img src="./img/burger_button.svg" alt="button burger Menu" />
+          </button>
+        </div>
+      </header>
     </div>
 
     <script
@@ -18,6 +57,7 @@
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
       crossorigin="anonymous"
     ></script>
+    <script src="js/index.js"></script>
     <script src="js/bootstrap.js"></script>
   </body>
 </html>
